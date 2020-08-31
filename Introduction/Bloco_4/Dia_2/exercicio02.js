@@ -7,3 +7,11 @@ for (let contador = 0; contador < numbers.length; contador += 1) {
     soma = soma + numbers[contador];
 }
 console.log(soma);
+
+/* 
+1. Adicionar o array
+2. Declarar a variável que vai conter a soma, com o valor 0;
+3. Percorrer o array;
+4. Verificar o valor em cada posição percorrida e somá-lo à variável de soma;
+5. Imprimir a variável de soma, com o valor total.
+*/

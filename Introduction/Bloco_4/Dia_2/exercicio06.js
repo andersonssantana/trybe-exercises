@@ -9,3 +9,13 @@ for (let contador = 0; contador < numbers.length; contador += 1) {
     }
 }
 console.log(numDeImpares)
+
+/* 
+1. Adicionar o array
+2. Declarar a variável que vai armazenar o número de números ímpares encontrados;
+3. Percorrer o array;
+4. Para cada posição, verificar se o número possui resto ao dividir por 2;
+    4a. Se o número na posição deixar resto ao dividir por 2, adicione +1 ao contador de ímpares.
+    4b. Caso contrário, a variável contadora permanece inalterada.
+5. Imprimir o número de ímpares.
+*/

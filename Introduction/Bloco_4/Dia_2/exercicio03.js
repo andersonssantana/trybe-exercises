@@ -8,3 +8,11 @@
         soma = soma + numbers[contador];
     }
     console.log(soma / numbers.length);
+
+    /* 
+1. Adicionar o array
+2. Declarar a variável que vai conter a soma, com o valor 0;
+3. Percorrer o array;
+4. Verificar o valor em cada posição percorrida e somá-lo à variável de soma;
+5. Imprimir a variável de soma, dividido pelo número total de posições do array.
+*/
