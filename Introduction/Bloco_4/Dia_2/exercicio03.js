@@ -9,7 +9,7 @@
     }
     console.log(soma / numbers.length);
 
-    /* 
+/* 
 1. Adicionar o array
 2. Declarar a variável que vai conter a soma, com o valor 0;
 3. Percorrer o array;
