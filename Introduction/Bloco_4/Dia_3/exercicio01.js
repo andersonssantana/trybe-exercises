@@ -6,7 +6,6 @@ if (n > 2) {
     for (let contador = 0; contador < n; contador += 1) {
         console.log('*'.repeat(n))
     }
-    
 }
 
 /* 
