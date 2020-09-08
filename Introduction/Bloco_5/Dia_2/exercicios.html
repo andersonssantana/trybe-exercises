@@ -76,7 +76,7 @@
 
       // 4. Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
       let paragrafo = document.createElement("p");
-      paragrafo.innerText = "Algum texto";
+      paragrafo.innerText = "Uma imagem aleatória!";
       let divCenterContent = document.querySelector(".center-content");
       divCenterContent.appendChild(paragrafo);
 
@@ -90,6 +90,12 @@
       rightContent.className = "right-content";
       divMainContent.appendChild(rightContent);
 
+      // 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
+      let imagem = document.createElement("img");
+      imagem.className = "small-image";
+      imagem.src = "https://picsum.photos/200";
+      let divLeftContent = document.querySelector(".left-content");
+      divCenterContent.appendChild(imagem);
     </script>
   </body>
 </html>
