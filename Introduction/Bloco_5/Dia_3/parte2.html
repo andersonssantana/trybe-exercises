@@ -76,11 +76,13 @@
         imagemUm.addEventListener("mouseover", function() {
           imagemUm.src = "https://upload.wikimedia.org/wikipedia/pt/0/0a/UYI2.jpeg";
           imagemDois.src = "https://upload.wikimedia.org/wikipedia/pt/9/9e/UYI1.jpeg";
+          console.log("onMouseOver");
         })
 
         imagemUm.addEventListener("mouseleave", function() {
           imagemUm.src = "https://upload.wikimedia.org/wikipedia/pt/9/9e/UYI1.jpeg";
           imagemDois.src = "https://upload.wikimedia.org/wikipedia/pt/0/0a/UYI2.jpeg";
+          console.log("onMouseLeave");
         })
   </script>
 </html>
