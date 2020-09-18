@@ -1,11 +1,5 @@
 window.onload = function () {
     carregaEstados();
-    materializecssInitialization()
-}
-
-function materializecssInitialization() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
 }
 
 
@@ -45,7 +39,6 @@ function carregaEstados() {
         novoEstado.innerText = estados[sigla];
         novoEstado.value = sigla;
         selectEstados.appendChild(novoEstado);
-        materializecssInitialization();
     }
 
 }
