@@ -1,0 +1,31 @@
+.sans-serif {
+    font-family: Arial, sans-serif;
+}
+
+.serif {
+    font-family: Times New Roman, serif;
+}
+
+.background-matte {
+    background-color: burlywood;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.font-black {
+    color: black;
+}
+
+.font-grey {
+    color: darkslategray;
+}
+
+.font-large {
+    font-size: larger;
+}
+
+.font-normal {
+    font-size: medium;
+}
