@@ -53,6 +53,8 @@
         console qual dos eventos acabou de ocorrer.
       </p>
       <!-- Adicione a tag <img /> aqui -->
+      <img id="uyi1" src="https://upload.wikimedia.org/wikipedia/pt/9/9e/UYI1.jpeg">
+      <img id="uyi2" src="https://upload.wikimedia.org/wikipedia/pt/0/0a/UYI2.jpeg">
     </div>
   </body>
   <script>
@@ -66,6 +68,21 @@
         document.querySelector("#botao-tarefa-dois").addEventListener("click", function(){
           let resultado = productPrice * discount;
           alert(resultado);
+        })
+
+        let imagemUm = document.querySelector("#uyi1");
+        let imagemDois = document.querySelector("#uyi2");
+
+        imagemUm.addEventListener("mouseover", function() {
+          imagemUm.src = "https://upload.wikimedia.org/wikipedia/pt/0/0a/UYI2.jpeg";
+          imagemDois.src = "https://upload.wikimedia.org/wikipedia/pt/9/9e/UYI1.jpeg";
+          console.log("onMouseOver");
+        })
+
+        imagemUm.addEventListener("mouseleave", function() {
+          imagemUm.src = "https://upload.wikimedia.org/wikipedia/pt/9/9e/UYI1.jpeg";
+          imagemDois.src = "https://upload.wikimedia.org/wikipedia/pt/0/0a/UYI2.jpeg";
+          console.log("onMouseLeave");
         })
   </script>
 </html>
