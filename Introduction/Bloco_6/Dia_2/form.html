@@ -3,125 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Aprendendo Forms: Currículo</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <session>
-      <header>
-        <h1>Currículo</h1>
-      </header>
+    <header>
+      <h1>Currículo</h1>
+    </header>
 
-      <fieldset>
-        <legend>Dados pessoais</legend>
-        <div>
-          <label for="input-nome">Nome:</label>
-          <input
-            type="text"
-            name="name"
-            id="input-nome"
-            required="required"
-            maxlength="40"
-          />
-        </div>
-        <div>
-          <label for="input-email">E-mail:</label>
-          <input
-            type="email"
-            name="email"
-            id="input-email"
-            required="required"
-          />
-        </div>
-        <div>
-          <label for="input-cpf">CPF:</label>
-          <input
-            type="text"
-            name="cpf"
-            id="input-cpf"
-            required="required"
-            maxlength="11"
-          />
-        </div>
-        <div>
-          <label for="input-endereco">Endereço:</label>
-          <input
-            type="text"
-            name="endereco"
-            id="input-endereco"
-            required="required"
-            maxlength="200"
-          />
-        </div>
-        <div>
-          <label for="input-cidade">Cidade:</label>
-          <input
-            type="text"
-            name="cidade"
-            id="input-cidade"
-            required="required"
-            maxlength="28"
-          />
-        </div>
-        <div></div>
-          <label for="input-estado">Estado:</label>
-          <select name="estado" id="input-estado" required="required">
-              <option>Selecione o estado</option>
-          </select>
-        </div>
-        <div></div>
-          <legend>Tipo:</legend>
-          <input type="radio" name="tipo" id="input-casa" /><label
-            for="input-casa"
-            >Casa</label
-          >
-          <br />
-          <input type="radio" name="tipo" id="input-apartamento" /><label
-            for="input-apartamento"
-            >Apartamento</label
-          >
-        </div>
-      </fieldset>
-      <fieldset class="form-session">
-        <legend>Última experiência profissional</legend>
-        <div></div>
-          <label for="input-resumo">Resumo do currículo:</label><br />
-          <textarea
-            name="resumo"
-            id="input-resumo"
-            cols="60"
-            rows="10"
-            maxlength="1000"
-            required="required"
-          ></textarea>
-        </div>
-        <div></div>
-          <label for="input-cargo">Cargo:</label>
-          <input
-            type="text"
-            name="cargo"
-            id="input-cargo"
-            required="required"
-            maxlength="40"
-          />
-        </div>
-        <div></div>
-          <label for="input-descricao-cargo">Descrição do cargo:</label>
-          <input
-            type="text"
-            name="descricao-cargo"
-            id="input-descricao-cargo"
-            maxlength="500"
-            required="required"
-          />
-        </div>
-        <div></div>
-          <label for="input-inicio">Data de início:</label>
-          <input type="text" name="data-inicio" id="input-inicio" />
-        </div>
-      </fieldset>
-      <button type="submit" id="send-button">Enviar</button>
-      <script src="script.js"></script>
-    </session>
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <div class="input-field col s12">
+        <label for="input-nome">Nome:</label>
+        <input
+          type="text"
+          name="name"
+          id="input-nome"
+          required="required"
+          maxlength="40"
+        />
+      </div>
+
+      <div class="input-field col s12">
+        <label for="input-email">E-mail:</label>
+        <input type="email" name="email" id="input-email" required="required" />
+      </div>
+
+      <div class="input-field col s12">
+        <label for="input-cpf">CPF:</label>
+        <input
+          type="text"
+          name="cpf"
+          id="input-cpf"
+          required="required"
+          maxlength="11"
+        />
+      </div>
+
+      <div class="input-field col s12">
+        <label for="input-endereco">Endereço:</label>
+        <input
+          type="text"
+          name="endereco"
+          id="input-endereco"
+          required="required"
+          maxlength="200"
+        />
+      </div>
+
+      <div class="input-field col s12">
+        <label for="input-cidade">Cidade:</label>
+        <input
+          type="text"
+          name="cidade"
+          id="input-cidade"
+          required="required"
+          maxlength="28"
+        />
+      </div>
+
+      <div class="input-field col s12">
+        <select
+          class="browser-default"
+          name="estado"
+          id="input-estado"
+          required="required"
+        >
+          <option value="0" selected>Selecione o estado</option>
+        </select>
+        <label></label>
+      </div>
+
+      <div class="input-field col s12">
+        <form action="#">
+          <p>
+            <label>
+              <input class="with-gap" name="moradia" type="radio" />
+              <span>Casa</span>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input class="with-gap" name="moradia" type="radio" />
+              <span>Apartamento</span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-session">
+      <legend>Última experiência profissional</legend>
+
+      <div class="input-field col s12">
+        <textarea id="input-resumo" class="materialize-textarea"></textarea>
+        <label for="input-resumo">Resumo do currículo</label>
+      </div>
+
+      <div class="input-field col s12">
+        <label for="input-cargo">Cargo:</label>
+        <input
+          type="text"
+          name="cargo"
+          id="input-cargo"
+          required="required"
+          maxlength="40"
+        />
+      </div>
+
+      <div class="input-field col s12">
+        <label for="input-descricao-cargo">Descrição do cargo:</label>
+        <input
+          type="text"
+          name="descricao-cargo"
+          id="input-descricao-cargo"
+          maxlength="500"
+          required="required"
+        />
+      </div>
+
+      <div class="input-field col s12">
+        <label for="input-inicio">Data de início:</label>
+        <input type="text" name="data-inicio" id="input-inicio" />
+      </div>
+    </fieldset>
+
+    <button class="btn waves-effect waves-light" type="submit" id="send-button">
+      Enviar<i class="material-icons right">send</i>
+    </button>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
