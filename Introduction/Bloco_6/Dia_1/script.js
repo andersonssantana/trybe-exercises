@@ -1,6 +1,7 @@
 window.onload = function () {
-carregaEstados();
+    carregaEstados();
 }
+
 
 function carregaEstados() {
     let estados = {
