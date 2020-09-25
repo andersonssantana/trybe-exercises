@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media (min-width: 200px) and (max-width: 768px) {
+
+    body {
+        display: flex;
+        margin: 5%;
+    }
+    
+    header p {
+        font-size: larger;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    p, h1 {
+        font-size: larger;
+    }
+
+  }
+
