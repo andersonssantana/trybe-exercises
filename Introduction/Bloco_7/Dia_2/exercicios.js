@@ -1,3 +1,5 @@
+// https://app.betrybe.com/course/fundamentals/javascript-es6/javascript-es6-objects
+
 const lesson1 = {
     materia: 'Matemática',
     numeroEstudantes: 20,
