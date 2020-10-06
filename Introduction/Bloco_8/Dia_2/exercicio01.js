@@ -82,4 +82,5 @@ function formatedBookNames() {
   return formatedBooksAsString;
 };
 
+console.log(formatedBookNames());
 assert.deepEqual(formatedBookNames(), expected_result);
