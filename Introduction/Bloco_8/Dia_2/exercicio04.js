@@ -102,5 +102,3 @@ function oldBooks() {
 
 console.table(oldBooks());
 assert.deepEqual(oldBooks(), expected_result);
-// Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
-//Dica: use as funções filter e sort
