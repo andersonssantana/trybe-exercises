@@ -33,7 +33,10 @@ const people = [
 
 // escreva filterPeople abaixo
 
-const filteredPeople = filterPeople(people)
+//console.log(people.filter((array) => array.bornIn < 2001 && array.nationality === 'Australian'));
+
+const filteredPeople = filterPeople(people);
+
 
 assert.deepEqual(filteredPeople[0], { name: "Nicole", bornIn: 1992, nationality: "Australian" })
 assert.deepEqual(filteredPeople[1], { name: "Toby", bornIn: 1901, nationality: "Australian" })
